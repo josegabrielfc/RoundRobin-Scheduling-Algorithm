@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
+:root {
+    --blue: #1e549f;
+    --indigo: #695aa6;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #ec185d;
+    --orange: #ff6d02;
+    --yellow: #ffc107;
+    --green: #1bb74f;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #393e46;
+    --primary: #695aa6;
+    --secondary: #393e46;
+    --success: #1bb74f;
+    --info: #17a2b8;
+    --warning: #ff6d02;
+    --danger: #ec185d;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Open Sans", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+::selection {
+    background: #695aa6;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    min-height: 70px;
+    border-top: 1px solid #dee2e6;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(../imgs/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+
+.header .header-content {
+    margin-top: 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 550px;
+}
+
+.header .header-content .header-title .up {
+    font-family: sans-serif;
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+}
+
+.header .header-content .header-title .down {
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+}
+
+.header .header-content .header-subtitle {
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.header .header-content .header-subtitle {
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    opacity: .8;
+    color: #212529;
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #695aa6;
+    border-color: #695aa6;
+    cursor: pointer;
+}
+
+.header .header-content .header-title .down {
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.header-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    opacity: .8;
+    color: #212529;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-family: 'Baloo Paaji', cursive;
+    color: #695aa6;
+}
+h1, .h1 {
+    font-size: 2.5rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header .header-content .btn {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}

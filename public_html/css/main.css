@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
+.navbar-custom {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   background-color: rgb(47, 45, 45);
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   padding-top: 50px;
+   padding-bottom: 20px;
+   background-color: #fff;
+   background-size: auto;
+   background-image: url("../img/header2.jpg");
+}
+
+h1 {
+   text-align: left;
+   font-size: 36px;
+   margin-top: 50px;
+}
+
+p {
+   text-align: left;
+   font-size: 20px;
+   margin-top: 20px;
+}
+
+.title {
+   margin: 0;
+   font-family: "Baloo Paaji", sans-serif;
+
+   line-height: 1.5;
+   color: #465377;
+   text-align: center;
+   font-size: 4.2rem;
+   font-weight: bold;
+   position: relative;
+   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+   transition: text-shadow 0.2s ease-in-out;
+}
+
+.title:hover {
+   text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.note {
+   font-family: 'Baloo Paaji';
+   width: 100%;
+}
+
+.navbar-inverse {
+   background-color: #222;
+   border-color: #080808;
+   position: relative;
+   font-family: 'Baloo Paaji';
+   z-index: 9999;
+}
+
+.navbar-brand {
+   font-size: 30px;
+   color: #fff;
+}
+
+.navbar-fixed-top {
+   position: absolute;
+   top: 0;
+}
+
+#tablaUni,
+#tablaMulti {
+   border-collapse: collapse;
+   margin: 0 auto;
+   max-width: 100%;
+   width: 80%;
+   font-size: 1.2em;
+}
+
+#tablaUni td,
+#tablaUni th,
+#tablaMulti td,
+#tablaMulti th {
+   padding: 10px;
+   border: none;
+   border-radius: 6px;
+}
+
+#tablaUni th,
+#tablaMulti th {
+   background-color: #fff;
+   text-align: left;
+}
+
+#btnAgregar,
+#btnLeer,
+#btnUni,
+#btnMulti {
+   background-color: #54638E;
+   color: #ffff;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   font-size: 15px;
+   cursor: pointer;
+   margin-left: 205px;
+   margin-top: 25px;
+   margin-bottom: 15px;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+   transition: box-shadow 0.2s ease-in-out;
+}
+#btnAgregar:hover,
+#btnLeer:hover,
+#btnUni:hover,
+#btnMulti:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#contenedorCampos,
+#tabla,
+#contenedorUni,
+#contenedorMulti {
+   margin-top: 10px;
+   margin: 0 auto;
+   max-width: 800px;
+   margin-left: 410px;
+   border-radius: 5px;
+}
+
+#tabla,
+#tablaProcesos {
+   margin: 0 auto;
+   max-width: 100%;
+   width: 19%;
+   border-collapse: separate;
+   border-spacing: 0;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#tabla th,
+#tablaProcesos th {
+   background-color: #6D85AB;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px 15px;
+   text-align: center;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+   border-top: 1px solid #666;
+   border-bottom: 1px solid #666;
+   border-right: 1px solid #666;
+}
+
+#tabla td,
+#tablaProcesos td {
+   background-color: #f2f2f2;
+   padding: 10px 15px;
+   text-align: center;
+   border-bottom: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   border-radius: 5px;
+}
+
+#tabla tr:nth-child(even) td,
+#tablaProcesos tr:nth-child(even) td {
+   background-color: #e6e6e6;
+}
+
+#tabla tbody tr:hover td,
+#tablaProcesos tbody tr:hover td {
+   background-color: #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+
+   #tabla,
+   #tablaProcesos {
+      width: 100%;
+   }
+
+   #tabla thead,
+   #tablaProcesos thead {
+      display: none;
+   }
+
+   #tabla tr,
+   #tablaProcesos tr {
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+   }
+
+   #tabla td,
+   #tablaProcesos td {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      border-bottom: none;
+      border-right: none;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+   }
+
+   #tabla td:before,
+   #tablaProcesos td:before {
+      content: attr(data-th) ": ";
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45%;
+      padding-right: 15px;
+      white-space: nowrap;
+   }
+}
